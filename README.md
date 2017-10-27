@@ -3,6 +3,7 @@
 
 **An app for the 21st century millennial. The one who wants to get things of their chest about society.**
 
+>I wanted to create this app to centralize the 'ever-so friendly' comment sections of the numerous applications out there, but giving users an incentive to generate and contribute to meaningful debates.
 
 ## Approach Taken
 
