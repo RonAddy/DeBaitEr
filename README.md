@@ -3,7 +3,7 @@
 
 ![alt text][pic]
 
-                              [pic]: https://thephilosophyclub.files.wordpress.com/2016/03/calvin-cartoon.jpg?w=470
+ [pic]: https://thephilosophyclub.files.wordpress.com/2016/03/calvin-cartoon.jpg?w=470
 
 
 **An app for the 21st century millennial. The one who wants to get things of their chest about society.**
@@ -26,9 +26,12 @@
 Pre-Work
 PHASE 1: Wireframes
 PHASE 2: Figure out database structure, needed tables.
+PHASE 3: Confirm News API limitations, possibilities
 
-(The steps or phases you expect to go through, and the tasks that you'll need to accomplish to reach each step. These should resemble the acceptance criteria we were working through earlier.)
+Work
+PHASE 1: Set-up migrations, database etc.
+PHASE 2: Build file structures
+PHASE 3: Follow MVC design pattern
+PHASE 4: Styling!
 
 Links and Resources
-
-(Anything you've looked up so far or are thinking about using.)
