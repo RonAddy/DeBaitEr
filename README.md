@@ -1,5 +1,5 @@
 # DeBaitEr
-An app for the 21st century millennial who wants to get things of their chest about society.
+**An app for the 21st century millennial who wants to get things of their chest about society.**
 
 ## Explantion of technologes used
-=================================
+
