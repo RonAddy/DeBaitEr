@@ -1,5 +1,5 @@
 ***Aaron Bart-Addison / October 28th, 2017 ***
-# DeBaitEr # Proposal
+# "DeBaitEr" Proposal
 
 **An app for the 21st century millennial. The one who wants to get things of their chest about society.**
 
