@@ -1,7 +1,10 @@
 ***Aaron Bart-Addison / October 28th, 2017 ***
 # "DeBaitEr" Proposal
 
-https://thephilosophyclub.files.wordpress.com/2016/03/calvin-cartoon.jpg?w=470
+![alt text][logo]
+
+[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
+Here's our logo (hover to see the title text):
 
 **An app for the 21st century millennial. The one who wants to get things of their chest about society.**
 
