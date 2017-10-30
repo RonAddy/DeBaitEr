@@ -4,7 +4,9 @@
   "description": "\"An app for the 21st century millennial. The one who wants to get things of their chest about society.\"",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js",
+    "debugger": "DEBUG=*:* nodemon server.js"
   },
   "repository": {
     "type": "git",
