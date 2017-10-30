@@ -1,0 +1,77 @@
+/*
+Class below used to style side navBar
+Width is initilaized at "0", to be changed by js
+Fixed to stay in position on scroll, top-left corner
+z-indexed to lay ontop of content
+overflow-x to keep content hidden untill active
+transition for effecs when menu icon clicked
+*/
+
+.sideMenu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 99999999;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    transition: 0.8s;
+}
+
+/*sytling for each anchor tag in menu*/
+/*transition for slight effect when on hover (below)*/
+
+.sideMenu a {
+    padding: 18px 18px 18px 35px;
+    text-decoration: none;
+    font-size: 32px;
+    color: dimgrey;
+    display: block;
+    font-family: 'Lato', sans-serif;
+    z-index: 99999999;
+
+
+}
+
+/*change color when anchor tag is hovered over*/
+
+.sideMenu a:hover {
+    color: gold;
+    border-bottom: 4px solid gold;
+    transition: 0.8s;
+}
+
+/*styling for burger menu icon */
+/*position absoulte, at top to keep consistency for each page*/
+#menuBtn {
+    color: white;
+    font-size: 26pt;
+    padding-left: 10px;
+    position: absolute;
+    top: 12px;
+    z-index: 2; /*keeps icon above frame*/
+    cursor: pointer; /*pointer replaces curser when over menu btn*/
+}
+
+/*styling for hover effects*/
+#menuBtn:hover {
+    color: gold;
+    transition: 0.8s;
+
+}
+
+/*pointer replaces curser when over close btn*/
+#close {
+    cursor: pointer;
+    top: -2px;
+    right: -180px;
+    position: relative;
+}
+
+/*styling for hover effects over close btn*/
+#close:hover {
+    color: white;
+    transition: 0.6s;
+    border-bottom: 4px solid white;
+}
