@@ -6,7 +6,6 @@ z-indexed to lay ontop of content
 overflow-x to keep content hidden untill active
 transition for effecs when menu icon clicked
 */
-
 .sideMenu {
     height: 100%;
     width: 0;
@@ -21,7 +20,6 @@ transition for effecs when menu icon clicked
 
 /*sytling for each anchor tag in menu*/
 /*transition for slight effect when on hover (below)*/
-
 .sideMenu a {
     padding: 18px 18px 18px 35px;
     text-decoration: none;
@@ -30,12 +28,9 @@ transition for effecs when menu icon clicked
     display: block;
     font-family: 'Lato', sans-serif;
     z-index: 99999999;
-
-
 }
 
 /*change color when anchor tag is hovered over*/
-
 .sideMenu a:hover {
     color: gold;
     border-bottom: 4px solid gold;
@@ -45,7 +40,7 @@ transition for effecs when menu icon clicked
 /*styling for burger menu icon */
 /*position absoulte, at top to keep consistency for each page*/
 #menuBtn {
-    color: white;
+    color: black;
     font-size: 26pt;
     padding-left: 10px;
     position: absolute;
@@ -71,7 +66,7 @@ transition for effecs when menu icon clicked
 
 /*styling for hover effects over close btn*/
 #close:hover {
-    color: white;
+    color: black;
     transition: 0.6s;
-    border-bottom: 4px solid white;
+    border-bottom: 4px solid black;
 }
