@@ -1,0 +1,19 @@
+{
+  "name": "project2_debaiter",
+  "version": "1.0.0",
+  "description": "\"An app for the 21st century millennial. The one who wants to get things of their chest about society.\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RonAddy/DeBaitEr.git"
+  },
+  "author": "Aaron Bart-Addison",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RonAddy/DeBaitEr/issues"
+  },
+  "homepage": "https://github.com/RonAddy/DeBaitEr#readme"
+}
