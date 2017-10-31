@@ -1,5 +1,5 @@
 body{
-  background-color: #F87D5A;
+  background-color: #F7625B;
 }
 h1 {
   color: white;
@@ -13,9 +13,11 @@ h1 {
 a {
   text-decoration: none;
   color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12pt;
 }
 
 button {
-  background-color: grey;
-  margin-top: 40px;
+  background-color: #191927;
+  margin-top: 20px;
 }
