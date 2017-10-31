@@ -47,9 +47,13 @@ app.set('views', path.join(__dirname, 'views'));
 
 //app will render index.ejs file after receiving a get request to the root path
 app.get('/', (req, res) => {
-  res.render('index');
+  res.render('landing');
 });
 
+const authRoutes = require('./routes/auth-routes');
+app.use('/auth', authRoutes);
+const userRoutes = require('./routes/user-routes');
+app.use('/user', userRoutes);
 
 
 //EhhROR checker

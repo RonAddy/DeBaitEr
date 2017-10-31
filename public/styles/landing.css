@@ -9,3 +9,13 @@ h1 {
   font-family: 'Bungee Shade', cursive;
   font-size: 30pt;
 }
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+button {
+  background-color: grey;
+  margin-top: 40px;
+}

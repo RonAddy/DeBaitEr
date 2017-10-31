@@ -12,7 +12,7 @@ transition for effecs when menu icon clicked
     position: fixed;
     z-index: 99999999;
     top: 0;
-    left: 0;
+    right: 0;
     background-color: black;
     overflow-x: hidden;
     transition: 0.8s;
@@ -45,6 +45,7 @@ transition for effecs when menu icon clicked
     padding-left: 10px;
     position: absolute;
     top: 12px;
+    right: 5px;
     z-index: 2; /*keeps icon above frame*/
     cursor: pointer; /*pointer replaces curser when over menu btn*/
 }

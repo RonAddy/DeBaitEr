@@ -9,6 +9,14 @@ authRouter.get('/login', authHelpers.loginRedirect, (req, res, next) => {
   res.render('auth/login');
 });
 
+//hanldes post request after users submit login form on get request
+authRouter.post('/login', passport.authenticate('local', {
+    successRedirect: '/user',
+    failureRedirect: '/auth/login',
+    failureFlash: true,
+  })
+);
+
 //handles requests to the register path, renders user register page
 authRouter.get('/register', authHelpers.loginRedirect, (req, res) => {
   res.render('auth/register');
@@ -16,3 +24,10 @@ authRouter.get('/register', authHelpers.loginRedirect, (req, res) => {
 
 //handles user register form, will create user and input data to databse via controller, then model
 authRouter.post('/register', usersController.create);
+
+authRouter.get('/logout', (req, res) => {
+  req.logout();
+  res.redirect('back');
+});
+
+module.exports = authRouter;

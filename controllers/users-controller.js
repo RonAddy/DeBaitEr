@@ -1,5 +1,5 @@
 const bcrypt = require('bcryptjs');
-const User = require('../models/user.js');
+const User = require('../models/Users.js');
 
 const usersController = {};
 
@@ -17,7 +17,7 @@ usersController.create = (req, res) => {
     req.login(user, (err) => {
       if (err) return next(err);
         res.redirect('/user');
-    });
+    })
   })
   .catch( err => {
     console.log(err);
@@ -25,4 +25,7 @@ usersController.create = (req, res) => {
   });
 };
 
+usersController.index = (req, res) => {
+  res.render('user/profile')
+}
 module.exports = usersController;
