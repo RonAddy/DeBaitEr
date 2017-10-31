@@ -16,7 +16,7 @@ usersController.create = (req, res) => {
   .then(user => {
     req.login(user, (err) => {
       if (err) return next(err);
-        res.redirect('/user');
+        res.redirect('/user-profile', {user});
     })
   })
   .catch( err => {
@@ -26,6 +26,6 @@ usersController.create = (req, res) => {
 };
 
 usersController.index = (req, res) => {
-  res.render('user/profile')
+  res.render('./user/user-profile', {user: req.user})
 }
 module.exports = usersController;

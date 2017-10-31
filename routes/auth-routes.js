@@ -25,9 +25,4 @@ authRouter.get('/register', authHelpers.loginRedirect, (req, res) => {
 //handles user register form, will create user and input data to databse via controller, then model
 authRouter.post('/register', usersController.create);
 
-authRouter.get('/logout', (req, res) => {
-  req.logout();
-  res.redirect('back');
-});
-
 module.exports = authRouter;

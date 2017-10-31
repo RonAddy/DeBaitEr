@@ -1,0 +1,56 @@
+#header {
+  background-color: #F7625B;
+  height: 35px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  border-bottom: 10px double #191927;
+}
+
+h1 {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  font-family: 'Bungee Shade', cursive;
+  font-size: 20pt;
+}
+
+#form-container {
+  margin: auto;
+  width: 90vw;
+  height: 40vh;
+  margin-top: 125px;
+}
+
+form {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.user_data  {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid black;
+  font-family: 'Open Sans', sans-serif; 
+}
+
+input {
+  margin: auto;
+  margin-top: 10px;
+  width: 70vw;
+  color: black;
+  font-size: 15pt;
+}
+
+#submit {
+  background-color: #F7625B;
+  color: white;
+  letter-spacing: 2px;
+  font-family: 'Bungee Shade', cursive;
+}
+
+#submit:active{
+  background-color: white;
+}

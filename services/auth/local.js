@@ -11,23 +11,18 @@ const options = {};
 init();
 
 passport.use(
-  new LocalStrategy(options, (username, passowrd, done) => {
-    User.findByUserName(username)
-      .then(user => {
-        if(!user){
-          returndone(null, false);
-        }
-        if(!authHelpers.comparePass(password, user.password_digest)) {
-          return done(null, false);
-        }
-        else{
-          return done(null, user);
-        }
-      })
-      .catch(err => {
-        console.log(err);
-        return done(err);
-      });
+  new LocalStrategy(options, (username, password, done) => {
+    User.findByUserName(username).then(user => {
+      if (!user) {
+        return done(null, false);
+      }
+      if (!authHelpers.comparePass(password, user.password_digest)) {
+        return done(null, false);
+      } else return done(null, user);
+    }).catch(err => {
+      console.log(err);
+      return done(err);
+    });
   })
 );
 

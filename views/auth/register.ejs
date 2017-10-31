@@ -10,14 +10,17 @@
   <link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Open+Sans" rel="stylesheet">
 </head>
 
-<div>
+<div id="header"><h1>REGISTER</h1></div>
+
+
+<div id='form-container'>
   <form method='POST' action='/auth/register'>
-    <input name='username' type='text' placeholder='username' required />
-    <input name='email' type='email' placeholder='email' required />
-    <input name='password' type='password' placeholder='password' required />
-    <input name='firstname' type='text' placeholder='first name' required />
-    <input name='lastname' type='text' placeholder='last name' required />
-    <input type='submit' value='Register!' />
+    <input class='user_data' name='username' type='text' placeholder='username' required />
+    <input class='user_data' name='email' type='email' placeholder='email' required />
+    <input class='user_data' name='password' type='password' placeholder='password' required />
+    <input class='user_data' name='fname' type='text' placeholder='first name' required />
+    <input class='user_data' name='lname' type='text' placeholder='last name' required />
+    <input id='submit' type='submit' value='SUBMIT !' style="margin-top: 140px;" />
   </form>
 </div>
 
