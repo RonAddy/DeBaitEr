@@ -26,6 +26,6 @@ usersController.create = (req, res) => {
 };
 
 usersController.index = (req, res) => {
-  res.render('./user/user-profile', {user: req.user})
+  res.render('./user/user-main', {user: req.user})
 }
 module.exports = usersController;
