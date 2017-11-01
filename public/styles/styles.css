@@ -1,0 +1,55 @@
+#header {
+  background-color: #F7625B;
+  height: 35px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  border-bottom: 10px double #191927;
+}
+
+img {
+  margin: auto;
+  margin-top: 20px;
+}
+
+#head_text {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  font-family: 'Bungee Shade', cursive;
+  font-size: 24pt;
+}
+
+#feed-container {
+  border: 4px double #F7625B;
+  border-radius: 5%;
+  height: 500px;
+  width: 97vw;
+  margin: auto;
+}
+
+#newTopic {
+  display: flex;
+  justify-content: space-around;
+  background-color: #191927;
+  width: 90vw;
+  margin: auto;
+}
+
+#newBtn {
+  color: white;
+}
+
+#newBtn:hover {
+  color: #F7625B;
+}
+
+h1 {
+  color: #F7625B;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  font-family: 'Bungee Shade', cursive;
+  font-size: 18pt;
+}
