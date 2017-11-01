@@ -54,7 +54,8 @@ const authRoutes = require('./routes/auth-routes');
 app.use('/auth', authRoutes);
 const userRoutes = require('./routes/user-routes');
 app.use('/user', userRoutes);
-
+const baitRoutes = require('./routes/bait-routes');
+app.use('/bait', baitRoutes);
 
 //EhhROR checker
 app.use('*', (req, res) => {

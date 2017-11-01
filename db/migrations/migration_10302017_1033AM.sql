@@ -15,5 +15,5 @@ CREATE TABLE bait (
   category VARCHAR(255) UNIQUE NOT NULL,
   title VARCHAR(255) NOT NULL,
   description TEXT,
-  author VARCHAR(255) UNIQUE NOT NULL REFERENCES users(username)
+  author VARCHAR(255) UNIQUE NOT NULL
 );

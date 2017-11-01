@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TITLE</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+  <link rel='stylesheet' type='text/css' href='/styles/reset.css'>
+  <link rel='stylesheet' type='text/css' href='/styles/bait_edit.css'>
+  <link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Open+Sans" rel="stylesheet">
+</head>
+
+<div id="header">
+  <h1 id="head_text">Edit?</h1>
+</div>
+
+<center>
+  <div id="bait_info">
+    <h1 class="wrapper">CATEGORY</h1><h1><%= data.category %></h1>
+    <h1 class="wrapper">TITLE</h1><h1><%= data.title %></h1>
+    <h1 class="wrapper">DESCRIPTION</h1><textarea><%= data.description %></textarea>
+
+
+    <!-- <a href="/todos/<%=data.id%>/edit">EDIT</a> -->
+    <!-- <form action="/todos/<%=data.id %>?_method=DELETE" method="POST">
+    <input type="submit" value="DELETE"> -->
+    </form>
+  </div>
+</center>
+
+<% include ../partials/end %>

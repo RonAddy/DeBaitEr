@@ -1,0 +1,38 @@
+#header {
+  background-color: #F7625B;
+  height: 35px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  border-bottom: 10px double #191927;
+}
+
+#head_text {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  font-family: 'Bungee Shade', cursive;
+  font-size: 24pt;
+}
+
+#bait_info {
+  margin: auto;
+  margin-top: 55px;
+  width: 90vw;
+  border: 2px double #191927;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper{
+  font-family: 'Bungee Shade', cursive;
+  font-size: 14pt;
+  color: #191927;
+  margin-top: 10px;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+}

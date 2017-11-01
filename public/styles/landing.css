@@ -19,5 +19,11 @@ a {
 
 button {
   background-color: #191927;
+  opacity: .7;
   margin-top: 20px;
+  border: none;
+}
+
+button:hover {
+  opacity: 1;
 }

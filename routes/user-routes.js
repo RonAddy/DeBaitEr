@@ -5,6 +5,4 @@ const authHelpers = require('../services/auth/auth-helpers');
 
 userRoutes.get('/', authHelpers.loginRequired, usersController.index);
 
-userRoutes.get('/new', authHelpers.loginRequired, usersController.create)
-
 module.exports = userRoutes;

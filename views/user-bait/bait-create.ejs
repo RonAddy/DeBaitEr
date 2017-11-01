@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TITLE</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+  <link rel='stylesheet' type='text/css' href='/styles/reset.css'>
+  <link rel='stylesheet' type='text/css' href='/styles/login_register.css'>
+  <link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Open+Sans" rel="stylesheet">
+</head>
+
+<div id="header">
+  <h1 id="head_text">New Bait</h1>
+</div>
+
+<div id='form-container'>
+  <form method='POST' action='/bait'>
+    <input class='bait_data' name='category' type='text' placeholder='category' required />
+    <input class='bait_data' name='title' type='text' placeholder='title' required />
+    <input class='bait_data' name='author' type='text' placeholder='name' required />
+    <textarea name="description" placeholder="What you chattin bout?"></textarea>
+    <input id='submit' type='submit' value='CREATE !' style="margin-top: 40px;" />
+  </form>
+</div>
+
+
+<% include ../partials/end %>

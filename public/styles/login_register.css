@@ -33,9 +33,15 @@ form {
   background-color: transparent;
   border: none;
   border-bottom: 2px solid black;
-  font-family: 'Open Sans', sans-serif; 
+  font-family: 'Open Sans', sans-serif;
 }
 
+.bait_data {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid black;
+  font-family: 'Open Sans', sans-serif;
+}
 input {
   margin: auto;
   margin-top: 10px;
@@ -53,4 +59,13 @@ input {
 
 #submit:active{
   background-color: white;
+}
+
+textarea {
+  width: 80vw;
+  border: 1px double #191927;
+  margin: auto;
+  height: 30vh;
+  margin-top: 10px;
+  font-size: 15pt;
 }
