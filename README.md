@@ -26,7 +26,7 @@
 >API's: News API
 
 >Modules:
-  
+
     "bcryptjs": Initializes the blowfish password encryption package for users
 
     "body-parser": Allows me to access and view data objects the way I want them to be viewed
@@ -76,25 +76,9 @@ baitController.showDiscuss = (req, res) => {
 baitRoutes.get('/discuss/:id',baitController.showDiscuss)
 ```
 
+##Upcoming Features
+
+>Better styling, functional profile page, log of previous comments made, API functionality for "daily bait" view, like system
+
+
 ## Wireframe
-
-(Your wireframes go here. Preferably two or more)
-
-## Initial thoughts on app structure
-
->Working with the sockets.io package will probably be the biggest challenge for me. I want to delve into the documentation and see the possibilities. I also need to figure out a working 'like' system as this is one of the main parts of the app.
-
-## Phases of Completion
-
->Pre-Work
-PHASE 1: Wireframes
-PHASE 2: Figure out database structure, needed tables.
-PHASE 3: Confirm News API limitations, possibilities
-
->Work
-PHASE 1: Set-up migrations, database etc.
-PHASE 2: Build file structures
-PHASE 3: Follow MVC design pattern
-PHASE 4: Styling!
-
-Links and Resources
