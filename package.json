@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon server.js",
     "check": "nodemon server.js",
-    "debugger": "DEBUG=*:* nodemon server.js"
+    "debugger": "DEBUG=*:* nodemon server.js",
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
