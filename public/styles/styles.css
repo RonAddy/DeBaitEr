@@ -61,7 +61,7 @@ h1 {
 #bait_container {
   background-color: #191927;
   height: 200px;
-  width: 95vw;
+  width: 90vw;
   border-radius: 5% 5% 0 0;
   border: 3px double white;
   margin: auto;
@@ -75,7 +75,7 @@ h1 {
 }
 
 #title {
-  font-size: 18pt;
+  font-size: 16pt;
   color: white;
   letter-spacing: 1px;
   margin-top: 5px;

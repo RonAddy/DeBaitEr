@@ -81,4 +81,6 @@ baitRoutes.get('/discuss/:id',baitController.showDiscuss)
 >Better styling, functional profile page, log of previous comments made, API functionality for "daily bait" view, like system
 
 
-## Wireframe
+## Wireframes
+
+>In Wireframe folder
