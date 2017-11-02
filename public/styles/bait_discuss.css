@@ -1,0 +1,55 @@
+#header {
+  background-color: #F7625B;
+  height: 105px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  border-bottom: 10px double #191927;
+}
+
+#head_text {
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-family: 'Bungee Shade', cursive;
+  font-size: 34pt;
+}
+
+#category {
+  font-size: 14pt;
+  letter-spacing: 2px;
+  color: grey;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#title {
+  font-size: 18pt;
+  color: white;
+  letter-spacing: 1px;
+  margin-top: 5px;
+}
+
+#author{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13pt;
+}
+
+#debait_info {
+  background-color: #191927;
+  height: 70px;
+  width: 95vw;
+  border-radius: 5% 5% 0 0;
+  border: 3px double black;
+  margin: auto;
+  margin-top: 130px;
+  position: relative;
+}
+
+.h1 {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  font-family: 'Bungee Shade', cursive;
+  font-size: 18pt;
+}
