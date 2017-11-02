@@ -76,7 +76,7 @@ baitController.showDiscuss = (req, res) => {
 baitRoutes.get('/discuss/:id',baitController.showDiscuss)
 ```
 
-##Upcoming Features
+## Upcoming Features
 
 >Better styling, functional profile page, log of previous comments made, API functionality for "daily bait" view, like system
 
