@@ -27,18 +27,28 @@
 
 >Modules:   
     "bcryptjs": Initializes the blowfish password encryption package for users
-    "body-parser": Allows me to access and view data objects the way I want them to be viewed
-    "cookie-parser":
-    "dotenv": Will allow me to use an .env file to hide secret key
-    "ejs": My scripting engine
-    "express": Used to create my web server
-    "express-session": "^1.15.6",
-    "method-override": Will be used to have access to PUT and DELETE methods
-    "morgan": Logger for request to server
-    "passport" ,"passport-local": Will be used for user authentication
-    "pg-promise": Will be used to communicate with server
-    "socket.io": Real time communication
 
+    "body-parser": Allows me to access and view data objects the way I want them to be viewed
+
+    "cookie-parser":
+
+    "dotenv": Will allow me to use an .env file to hide secret key
+
+    "ejs": My scripting engine
+
+    "express": Used to create my web server
+
+    "express-session": "^1.15.6"
+
+    "method-override": Will be used to have access to PUT and DELETE methods
+
+    "morgan": Logger for request to server
+
+    "passport" ,"passport-local": Will be used for user authentication
+
+    "pg-promise": Will be used to communicate with server
+
+    "socket.io": Real time communication
 
 ## Code Snippet Im proud of
 
