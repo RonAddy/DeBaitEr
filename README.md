@@ -25,7 +25,8 @@
 
 >API's: News API
 
->Modules:   
+>Modules:
+  
     "bcryptjs": Initializes the blowfish password encryption package for users
 
     "body-parser": Allows me to access and view data objects the way I want them to be viewed
