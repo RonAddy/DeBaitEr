@@ -12,4 +12,6 @@ baitRoutes.post('/', baitController.create);
 
 baitRoutes.put('/:id', baitController.update);
 
+baitRoutes.get('/discuss/:id',baitController.showDiscuss)
+
 module.exports =  baitRoutes;

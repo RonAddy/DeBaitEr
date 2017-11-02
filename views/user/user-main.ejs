@@ -13,32 +13,29 @@
 
 <div id="newTopic">
   <a href="/bait/new"><button id="newBtn"><i class="fa fa-plus-circle fa-3x" aria-hidden="true"></i></button></a>
-  <h1>NEW TOPIC</h1>
+  <h1>NEW BAIT !</h1>
 </div>
 
 <div id="feed-container">
-
+  <br />
   <% data.forEach(data => { %>
-  <div>
-    <div id="top-bar">
-      <h1><%= data.category %></h1>
-      <h1><%= data.title %></h1>
+  <div id="bait_container">
+    <h1 id="title" ><%= data.title %></h1>
+    <h1 id="category"><%= data.category %></h1>
+    <h1 id="author" ><span>BY:</span><%= data.author %></h1>
+    <div id="description_container">
+      <h1 id="description" ><%= data.description %></h1>
     </div>
-    <div id="bottom-bar">
-    <h1><%= data.description %></h1>
-    <h1></h1>
+
+    <div id="bait_btns">
+      <form action="/bait/discuss/<%=data.id%>" method="GET">
+      <a><button type="submit" id="debait">DeBAIT !</button></a>
+      <a><button id="delete">DELETE !</button></a>
+    </form>
     </div>
-    </div>
+  </div>
   <br>
   <% }) %>
-
-<!-- <div>
-  <h1 class="title"></h1>
-  <h1 class="author"></h1>
-  <h1 class="description"></h1>
-  <h1 class="category"></h1>
-  <img src="" alt="">
-</div> -->
 
 </div>
 

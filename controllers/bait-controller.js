@@ -12,6 +12,16 @@ baitController.show = (req, res) => {
     });
 };
 
+baitController.showDiscuss = (req, res) => {
+  Bait.findById(req.params.id)
+    .then( bait => {
+      res.render('user-bait/bait-discuss', {data: bait});
+    })
+    .catch(err => {
+      res.status(500).send({error: err});
+    });
+};
+
 baitController.create = (req, res) => {
   Bait.create({
     category: req.body.category,

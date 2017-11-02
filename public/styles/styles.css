@@ -23,20 +23,22 @@
 
 #feed-container {
   border: 4px double #F7625B;
-  border-radius: 5%;
   height: 500px;
   width: 97vw;
   margin: auto;
+  border-left: transparent;
+  border-right: transparent;
 }
 
 #newTopic {
   display: flex;
   justify-content: space-around;
-  background-color: #191927;
+  background-color: #F7625B;
   width: 60vw;
   margin: auto;
   margin-bottom: 10px;
   border-radius: 15px 15px 0 0;
+  border: 3px double #191927;
 }
 
 #newBtn {
@@ -48,10 +50,71 @@
 }
 
 h1 {
-  color: #F7625B;
+  color: white;
   display: flex;
   justify-content: center;
   align-self: center;
   font-family: 'Bungee Shade', cursive;
   font-size: 18pt;
+}
+
+#bait_container {
+  background-color: #191927;
+  height: 200px;
+  width: 95vw;
+  border-radius: 5% 5% 0 0;
+  border: 3px double white;
+  margin: auto;
+}
+
+#category {
+  font-size: 14pt;
+  letter-spacing: 2px;
+  color: grey;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#title {
+  font-size: 18pt;
+  color: white;
+  letter-spacing: 1px;
+  margin-top: 5px;
+  display: flex;
+}
+
+#description {
+  font-size: 13pt;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 5px;
+
+}
+
+#description_container {
+  overflow-y: scroll;
+  height: 65px;
+}
+
+#author{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13pt;
+}
+
+#bait_btns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+}
+
+#debait {
+  font-size: 16pt;
+  font-family: 'Bungee Shade', cursive;
+  color: #F7625B;
+  letter-spacing: 2px;
+}
+
+#delete {
+  font-size: 16pt;
+  font-family: 'Bungee Shade', cursive;
+  color: red;
+  letter-spacing: 2px;
 }

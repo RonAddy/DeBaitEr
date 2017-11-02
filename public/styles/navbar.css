@@ -46,7 +46,7 @@ transition for effecs when menu icon clicked
     color: #191927;
     font-size: 26pt;
     padding-left: 10px;
-    position: absolute;
+    position: fixed;
     top: 3px;
     right: 5px;
     z-index: 2; /*keeps icon above frame*/
