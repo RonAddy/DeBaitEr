@@ -1,5 +1,6 @@
 const bcrypt = require('bcryptjs');
 const User = require('../models/Users.js');
+const Bait = require('../models/Bait')
 
 const usersController = {};
 
@@ -26,6 +27,10 @@ usersController.create = (req, res) => {
 };
 
 usersController.index = (req, res) => {
-  res.render('./user/user-main', {user: req.user})
+  Bait.findAll()
+  .then (bait => {
+    res.render('./user/user-main', {data: bait})
+  })
 }
+
 module.exports = usersController;

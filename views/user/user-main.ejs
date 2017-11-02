@@ -18,6 +18,20 @@
 
 <div id="feed-container">
 
+  <% data.forEach(data => { %>
+  <div>
+    <div id="top-bar">
+      <h1><%= data.category %></h1>
+      <h1><%= data.title %></h1>
+    </div>
+    <div id="bottom-bar">
+    <h1><%= data.description %></h1>
+    <h1></h1>
+    </div>
+    </div>
+  <br>
+  <% }) %>
+
 <!-- <div>
   <h1 class="title"></h1>
   <h1 class="author"></h1>

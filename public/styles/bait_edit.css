@@ -62,13 +62,13 @@ h1 {
   border: 1px solid #191927;
 }
 
-#submit {
+.submit {
   background-color: #F7625B;
   color: white;
   letter-spacing: 2px;
   font-family: 'Bungee Shade', cursive;
 }
 
-#submit:active{
+.submit:active{
   background-color: white;
 }

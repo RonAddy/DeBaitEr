@@ -31,7 +31,8 @@ baitController.update = (req, res) => {
     description: req.body.description,
   }, req.params.id)
     .then( bait => {
-      res.redirect(`/bait/${bait.id}`);
+      // res.redirect(`/bait/${bait.id}`);
+      res.render('/user-bait/bait-show')
     })
     .catch(err => {
       res.status(500).send({error: err});
