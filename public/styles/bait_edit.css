@@ -36,3 +36,16 @@ h1 {
   display: flex;
   justify-content: center;
 }
+
+#form-container {
+  margin: auto;
+  width: 90vw;
+  height: 40vh;
+  margin-top: 15px;
+}
+
+#update_form {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}

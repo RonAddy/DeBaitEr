@@ -18,14 +18,22 @@
   <div id="bait_info">
     <h1 class="wrapper">CATEGORY</h1><h1><%= data.category %></h1>
     <h1 class="wrapper">TITLE</h1><h1><%= data.title %></h1>
-    <h1 class="wrapper">DESCRIPTION</h1><textarea><%= data.description %></textarea>
-
-
-    <!-- <a href="/todos/<%=data.id%>/edit">EDIT</a> -->
-    <!-- <form action="/todos/<%=data.id %>?_method=DELETE" method="POST">
-    <input type="submit" value="DELETE"> -->
-    </form>
+    <h1 class="wrapper">DESCRIPTION</h1><h1><%= data.description %></h1>
   </div>
+
+  <div>
+    <div id="form-container">
+      <form id="update_form" action="/bait/<%=data.id%>?_method=PUT" method="POST">
+        <input class='bait_data' type="text" name="category" placeholder="" value="<%= data.category %>" />
+        <input class='bait_data' type="text" name="title" placeholder="" value="<%=data.title%>" />
+        <textarea name="description" value="<%=data.description %>"></textarea>
+        <input id='submit' type="submit" value="Edit it!">
+      </form>
+    </div>
+
+    <a href="/user/">Back to BAITS!</a>
+  </div>
+
 </center>
 
 <% include ../partials/end %>
