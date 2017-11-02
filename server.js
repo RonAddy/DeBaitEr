@@ -57,6 +57,12 @@ app.use('/user', userRoutes);
 const baitRoutes = require('./routes/bait-routes');
 app.use('/bait', baitRoutes);
 
+let socketlog = [];
+
+
+
+
+
 //EhhROR checker
 app.use('*', (req, res) => {
   res.status(400).send('Not Found');
