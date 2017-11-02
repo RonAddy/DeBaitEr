@@ -12,7 +12,7 @@ CREATE TABLE users (
 
 CREATE TABLE bait (
   id SERIAL PRIMARY KEY,
-  category VARCHAR(255) UNIQUE NOT NULL,
+  category VARCHAR(255) NOT NULL,
   title VARCHAR(255) NOT NULL,
   description TEXT,
   author VARCHAR(255) NOT NULL REFERENCES users(username)
