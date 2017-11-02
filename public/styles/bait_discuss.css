@@ -53,3 +53,14 @@
   font-family: 'Bungee Shade', cursive;
   font-size: 18pt;
 }
+
+ul {
+  border: 2px solid #191927;
+  height: 230px;
+  margin-top: 10px;
+}
+
+#content_box {
+  position: absolute;
+  bottom: 0;
+}

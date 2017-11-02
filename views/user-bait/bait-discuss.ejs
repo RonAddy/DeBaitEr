@@ -12,6 +12,42 @@
   <link rel="stylesheet" href="/styles/font-awesome-4.7.0/css/font-awesome.css">
   <link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Open+Sans" rel="stylesheet">
   <script type="text/javascript" src="/src/navbar.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script type="text/javascript">
+
+//socket configuration referencing socket.io lecture
+    var socket = io();
+
+    window.onload = function() {
+      let contentBox = document.querySelector('#content_box');
+      let username = document.querySelector("#username");
+      let content = document.querySelector('#content');
+      let container = document.querySelector('ul');
+
+
+        contentBox.addEventListener('submit', function(event) {
+          event.preventDefault();
+
+          let textToSend = {
+            username: username.value,
+            text: content.value
+          }
+
+          socket.emit("send", textToSend);
+          content.value = "";
+        })
+
+        socket.on("message", function(text) {
+          console.log('message ->', text)
+          let item = document.createElement('li');
+          item.innerHTML = text.username + " - " + text.text
+          console.log(item);
+          container.appendChild(item);
+        });
+    };
+
+
+  </script>
 </head>
 
 <body>
@@ -25,7 +61,16 @@
   <h1 id="title"><%= data.title %></h1>
   <h1 id="category"><%= data.category %></h1>
   <h1 id="author"><%= data.author %></h1>
-  
+  <ul>
+
+
+  </ul>
 </div>
+
+<form action="" id="content_box">
+  <input type="text" placeholder="User Name" id="username">
+  <input type="text" placeholder="type here" id="content"><button id="send">SEND</button>
+</form>
+
 
 <% include ../partials/end %>

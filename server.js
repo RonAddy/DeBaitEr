@@ -20,9 +20,9 @@ require('dotenv').config();
 const PORT = process.env.PORT || 3000;
 
 //set app to listen on this port
-app.listen(PORT, () => {
-  console.log(`🗣 (${PORT})‼️  👥👥👥👤👥👥💭`)
-})
+// app.listen(PORT, () => {
+//   console.log(`🗣 (${PORT})‼️  👥👥👥👤👥👥💭`)
+// })
 
 //setting up the middlewares: logger, auth, bodyParser, etc.
 app.use(logger('dev'));
@@ -59,9 +59,35 @@ app.use('/bait', baitRoutes);
 
 let socketlog = [];
 
+const server = require('http').createServer(app);
+const io = require('socket.io')(server);
+
+io.on('connection', function(socket) {
+  console.log("New debaiter !:" + socket.id);
+  socketlog.push({username: "", socket:socket});
+  console.log('total debaiters -> ', socketlog.length);
+
+  socket.on("send", function(event) {
+    console.log("--Got a message--");
+    console.log(event);
+
+
+    io.emit("message" , event);
+  });
+
+    socket.on('disconnect', function(event) {
+      console.log('user disconnected', socket.id);
+      let index = socketlog.indexOf(socket.id);
+      socketlog.splice(index, 1);
+      console.log('log now has ', socketlog.length);
+    })
+});
 
 
 
+server.listen(PORT, function () {
+  console.log(`🗣 (${PORT})‼️  👥👥👥👤👥👥💭`)
+});
 
 //EhhROR checker
 app.use('*', (req, res) => {
