@@ -26,11 +26,12 @@
       <form id="update_form" action="/bait/<%=data.id%>?_method=PUT" method="POST">
         <input class='bait_data' type="text" name="category" placeholder="" value="<%= data.category %>" />
         <input class='bait_data' type="text" name="title" placeholder="" value="<%=data.title%>" />
-        <textarea name="description" value="<%=data.description %>"></textarea>
-        <input id='submit' type="submit" value="Edit it!">
+        <textarea id="edit_description" name="description" value="<%=data.description %>"></textarea>
+        <input id='submit' type="submit" value="Fix it!">
       </form>
     </div>
 
+    <a href="/user/">POST !</a>
     <a href="/user/">Back to BAITS!</a>
   </div>
 

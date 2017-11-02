@@ -1,6 +1,6 @@
 #header {
   background-color: #F7625B;
-  height: 35px;
+  height: 105px;
   width: 100%;
   position: fixed;
   top: 0;
@@ -11,16 +11,15 @@ h1 {
   color: white;
   display: flex;
   justify-content: center;
-  align-self: center;
   font-family: 'Bungee Shade', cursive;
-  font-size: 20pt;
+  font-size: 34pt;
 }
 
 #form-container {
   margin: auto;
   width: 90vw;
   height: 40vh;
-  margin-top: 125px;
+  margin-top: 175px;
 }
 
 form {

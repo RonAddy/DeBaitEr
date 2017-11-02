@@ -1,6 +1,6 @@
 #header {
   background-color: #F7625B;
-  height: 35px;
+  height: 55px;
   width: 100%;
   position: fixed;
   top: 0;
@@ -13,12 +13,12 @@
   justify-content: center;
   align-self: center;
   font-family: 'Bungee Shade', cursive;
-  font-size: 24pt;
+  font-size: 34pt;
 }
 
 #bait_info {
   margin: auto;
-  margin-top: 55px;
+  margin-top: 75px;
   width: 90vw;
   border: 2px double #191927;
   display: flex;
@@ -48,4 +48,27 @@ h1 {
   margin: auto;
   display: flex;
   flex-direction: column;
+}
+
+.bait_data {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid black;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#edit_description {
+  margin-top: 15px;
+  border: 1px solid #191927;
+}
+
+#submit {
+  background-color: #F7625B;
+  color: white;
+  letter-spacing: 2px;
+  font-family: 'Bungee Shade', cursive;
+}
+
+#submit:active{
+  background-color: white;
 }

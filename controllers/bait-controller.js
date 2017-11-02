@@ -20,9 +20,22 @@ baitController.create = (req, res) => {
     author: req.body.author,
   })
   .then(bait => {
-    console.log(bait);
     res.redirect(`/bait/${bait.id}`)
   })
 };
+
+baitController.update = (req, res) => {
+  Bait.update({
+    category: req.body.category,
+    title: req.body.title,
+    description: req.body.description,
+  }, req.params.id)
+    .then( bait => {
+      res.redirect(`/bait/${bait.id}`);
+    })
+    .catch(err => {
+      res.status(500).send({error: err});
+    });
+}
 
 module.exports = baitController;

@@ -16,4 +16,14 @@ Bait.findById = (id) => {
   );
 };
 
+Bait.update = (bait, id) => {
+  return db.one(
+    `UPDATE bait SET
+      category = $1,
+      title = $2,
+      description = $3,
+      WHERE id = $4
+      RETURNING *`,[bait.category, bait.title, bait.description,id]);
+}
+
 module.exports = Bait;

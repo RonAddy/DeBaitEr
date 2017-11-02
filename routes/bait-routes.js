@@ -10,4 +10,6 @@ baitRoutes.get('/:id', baitController.show);
 
 baitRoutes.post('/', baitController.create);
 
+baitRoutes.put('/:id', baitController.update);
+
 module.exports =  baitRoutes;
