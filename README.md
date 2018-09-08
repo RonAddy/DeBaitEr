@@ -1,5 +1,6 @@
 ***Aaron Bart-Addison / October 28th, 2017 ***
-# "DeBaitEr" Proposal
+
+# "DeBaitEr"
 
 ![alt text][pic]
 
